@@ -4,21 +4,26 @@ import Home from './components/Home'
 import About from './src/about'
 import Contact from './src/contact'
 import Education from './src/education'
-import Project from './src/project'
+import Projects from './src/projects'
 import Layout from './components/Layout'
-import Counter from './src/counter'
+import Services from './src/Services'
+import './components/Layout.css'
+
 
 const MainRouter = () => {
 return (<div>
     <Layout/>
 <Routes>
 <Route exact path="/" element={<Home />} />
-<Route exact path="/about" element={<About />} />
-<Route exact path="/contact" element={<Contact />} />
+<Route exact path="/about" element={<About  />} />
 <Route exact path="/education" element={<Education />} />
-<Route exact path="/project" element={<Project />} />
-<Route exact path="/counter" element={<Counter />} />
+<Route exact path="/projects" element={<Projects />} />
+<Route exact path="/services" element={<Services />} />
+<Route exact path="/contact" element={<Contact />} />
 </Routes>
+<footer className="layout-footer">
+<p>&copy; Jallini Joachimpillai 2024. All rights reserved.</p>
+</footer>
 </div>
 )
 }
