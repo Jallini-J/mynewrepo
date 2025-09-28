@@ -1,3 +1,4 @@
+// Projects showcase page displaying 3 portfolio projects with images
 import './projects.css';
 import databaseImage from './assets/database.png';
 import healthcareImage from './assets/healthcare_app_image.png';
@@ -8,6 +9,7 @@ return (
 <div className="projects-container">
 <h2 className="projects-title">My Projects</h2>
 
+{/* Project 1: Pokédex Web App */}
 <div className="project-entry">
 <h3 className="project-name">1. Pokédex Web App (JavaScript & REST API)</h3>
 <a href={pokemonImage} target="_blank" rel="noopener noreferrer" className="project-image-link">
@@ -28,6 +30,7 @@ return (
 </div>
 </div>
 
+{/* Project 2: Healthcare App Documentation */}
 <div className="project-entry">
 <h3 className="project-name">2. Healthcare App Documentation - MediAlert (Requirements Analysis)</h3>
 <a href={healthcareImage} target="_blank" rel="noopener noreferrer" className="project-image-link">
@@ -48,6 +51,7 @@ return (
 </div>
 </div>
 
+{/* Project 3: Database Management System */}
 <div className="project-entry">
 <h3 className="project-name">3. Student Database Management System (Oracle 12c)</h3>
 <a href={databaseImage} target="_blank" rel="noopener noreferrer" className="project-image-link">

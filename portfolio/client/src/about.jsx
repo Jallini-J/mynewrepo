@@ -1,3 +1,4 @@
+// About page displaying personal bio, profile photo, and resume download
 import profilePhoto from './assets/mycard.jpeg';
 import resumePDF from './assets/Web_App_Resume.pdf';
 import './about.css';
@@ -12,7 +13,7 @@ My name is Jallini Joachimpillai, and I am a second-year student in the Software
 </p>
 <div className="resume-section">
 <a href={resumePDF} download="Jallini_Joachimpillai_Resume.pdf" className="resume-link">
-📄 Download My Resume
+📄 Download My Resume 
 </a>
 </div>
 <img src={profilePhoto} alt="Photo headshot" className="profile-image" />

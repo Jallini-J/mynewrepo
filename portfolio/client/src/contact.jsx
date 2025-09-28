@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './contact.css';
+// Contact page with info panel and interactive message form
+
 
 export default function Contact() {
+// Navigation hook for redirects
 const navigate = useNavigate();
+// Form data state management
 const [formData, setFormData] = useState({
 firstName: "",
 lastName: "",
@@ -12,11 +16,13 @@ email: "",
 message: "",
 });
 
+// Update form fields
 const handleChange = (event) => {
 const { name, value } = event.target;
 setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
 };
 
+// Form submission with alert and redirect
 const handleSubmit = (event) => {
 event.preventDefault();
 alert(
@@ -34,6 +40,7 @@ return (
 <div className="contact-container">
 <h2 className="contact-title">Contact Me</h2>
 
+{/* Contact information panel */}
 <div className="contact-content-box">
 <p className="contact-subtitle">Networking - Collaborations - Co-op</p>
 <p className="contact-info"><strong>Email:</strong> jjoachi4@my.centennialcollege.ca</p>
@@ -42,8 +49,10 @@ return (
 <p className="contact-info"><strong>Location:</strong> Toronto, ON (EST)</p>
 </div>
 
+{/* Interactive contact form */}
 <div className="contact-form-box">
 <p className="contact-subtitle">Send Me a Message</p>
+{/* Form input fields */}
 <form onSubmit={handleSubmit} className="contact-form">
 <div className="form-row">
 <div className="form-group">

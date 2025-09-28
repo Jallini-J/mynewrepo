@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
+/**
+ * Home.jsx - Landing page component for portfolio website
+ * Displays welcome message, mission statement, and navigation buttons
+ */
 
+/**
+ * Home component renders the main landing page with mission statement
+ * and call-to-action buttons for navigation
+ */
 export default function Home() {
 return (
 <div className="home-container">
